@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="How can you help?"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15pt"
+        android:layout_marginTop="25dp"
+        android:id="@+id/textView" />
+
+    <Button
+        android:id="@+id/volunteer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/monetaryD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:onClick="onClickV"
+        android:text="Volunteer" />
+
+    <Button
+        android:id="@+id/foodD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/monetaryD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:onClick="onClickFood"
+        android:text="Donate Food" />
+
+    <Button
+        android:id="@+id/monetaryD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="onClickMoney"
+        android:text="Donate Money" />
+</RelativeLayout>

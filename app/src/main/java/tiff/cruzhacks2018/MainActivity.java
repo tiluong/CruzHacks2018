@@ -23,4 +23,9 @@ public class MainActivity extends AppCompatActivity {
         Intent myIntent = new Intent(this, Receive.class);
         startActivity(myIntent);
     }
+
+    public void onClickD(View v){
+        Intent myIntent = new Intent(this, DonorTasks.class);
+        startActivity(myIntent);
+    }
 }

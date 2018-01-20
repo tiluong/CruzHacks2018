@@ -12,14 +12,20 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="25pt"
         android:layout_marginTop="25dp"/>
+    
+    <TextView
+        android:id="@+id/placement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
 
     <Button
         android:id="@+id/G"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="180dp"
+        android:layout_above="@+id/placement"
+        android:layout_marginBottom="40dp"
         android:background="@color/Green"
         android:onClick="onClickG"
         android:text="G"
@@ -29,11 +35,17 @@
         android:id="@+id/R"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="180dp"
+        android:layout_below="@+id/placement"
+        android:layout_marginTop="40dp"
         android:text="R"
         android:background="@color/Blue"
         android:textColor="@color/white"
         android:onClick="onClickR"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickD"
+        android:text="TO BE DELTED" />
 </RelativeLayout>
