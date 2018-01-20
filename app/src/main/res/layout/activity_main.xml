@@ -10,7 +10,7 @@
         android:layout_centerHorizontal="true"
         android:text="TITLE"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="45"
+        android:textSize="25pt"
         android:layout_marginTop="25dp"/>
 
     <Button
@@ -20,9 +20,10 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="180dp"
-        android:text="G"
         android:background="@color/Green"
-        android:textColor="@color/white"/>
+        android:onClick="onClickG"
+        android:text="G"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/R"
@@ -33,5 +34,6 @@
         android:layout_marginBottom="180dp"
         android:text="R"
         android:background="@color/Blue"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        android:onClick="onClickR"/>
 </RelativeLayout>
