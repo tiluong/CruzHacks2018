@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CruzHacks2018.iml" filepath="$PROJECT_DIR$/CruzHacks2018.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\User1\Desktop\CruzHacks2018\CruzHacks2018\app\app.iml" filepath="C:\Users\User1\Desktop\CruzHacks2018\CruzHacks2018\app\app.iml" />
     </modules>
   </component>
 </project>
