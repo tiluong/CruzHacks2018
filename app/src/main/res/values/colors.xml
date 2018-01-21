@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#1df561</color>
+    <color name="colorPrimaryDark">#16ba4a</color>
     <color name="colorAccent">#FF4081</color>
     <color name="Grey">#6e90b3</color>
     <color name="Purple">#d1afff</color>
@@ -12,5 +12,10 @@
     <color name="Red">#fd9995</color>
     <color name="bg">#eaeaea</color>
     <color name="white">#ffffff</color>
-    <color name="anothaone">#ebd8ff</color>
+    <color name="anothaone">#fff0ad</color>
 </resources>
+
+<!--
+<color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+-->

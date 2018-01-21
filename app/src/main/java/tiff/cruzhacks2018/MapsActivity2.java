@@ -73,7 +73,7 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
         mMap.addMarker(new MarkerOptions().position(new LatLng(36.9681, -122.0310)).title("Salvation Army Santa Cruz Corps").snippet("721 Laurel St, Santa Cruz, CA"));
         mMap.addMarker(new MarkerOptions().position(new LatLng(36.9688, -122.0156)).title("Nueva Vista Community Center").snippet("711 E Cliff Dr, Santa Cruz, CA"));
 
-        float zoom = 14;
+        float zoom = 12;
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(yourLoc, zoom));
 
         mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener(){
