@@ -1,5 +1,6 @@
 package tiff.cruzhacks2018;
 
+import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
@@ -13,10 +14,15 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    Double Longitude;
+    Double Latitude;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Intent i = getIntent();
+        Longitude = i.getDoubleExtra("Long", 0.00);
+        Latitude = i.getDoubleExtra("Lat", 0.00);
         setContentView(R.layout.activity_maps2);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -39,8 +45,9 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(36.971772, -122.030143);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng yourLoc = new LatLng(Latitude, Longitude);
+        mMap.addMarker(new MarkerOptions().position(yourLoc).title("Your Location"));
+        float zoom = 18;
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(yourLoc, zoom));
     }
 }
