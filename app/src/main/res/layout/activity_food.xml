@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+        <!--can change to relative layout instead of linear+scrollview and it'll work-->
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Most Needed Foods - Veggies"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10pt" />
+
+        <CheckBox
+            android:id="@+id/box1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/submitButton"
+            android:layout_below="@+id/textView"
+            android:text="Broccoli" />
+
+        <CheckBox
+            android:id="@+id/box2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/submitButton"
+            android:layout_below="@+id/box1"
+            android:text="Carrots" />
+
+        <CheckBox
+            android:id="@+id/box3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/submitButton"
+            android:layout_below="@+id/box2"
+            android:text="Cauliflower" />
+
+        <CheckBox
+            android:id="@+id/box4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/submitButton"
+            android:layout_below="@+id/box3"
+            android:text="Cucumber" />
+
+        <CheckBox
+            android:id="@+id/box5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/submitButton"
+            android:layout_below="@+id/box4"
+            android:text="Jicama"
+            tools:ignore="NotSibling" />
+
+        <CheckBox
+            android:id="@+id/box6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/submitButton"
+            android:layout_below="@+id/box5"
+            android:text="Parsnips" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/box6"
+            android:layout_centerHorizontal="true"
+            android:text="Oils and Spices"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10pt"
+            tools:ignore="UnknownId" />
+
+        <CheckBox
+            android:id="@+id/box7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/submitButton"
+            android:layout_below="@+id/textView2"
+            android:text="Canola Oil" />
+
+        <CheckBox
+            android:id="@+id/box8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/submitButton"
+            android:layout_below="@+id/box7"
+            android:text="Corn Oil" />
+
+        <CheckBox
+            android:id="@+id/box9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/submitButton"
+            android:layout_below="@+id/box8"
+            android:text="Marinara Sauce" />
+
+        <CheckBox
+            android:id="@+id/box10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/submitButton"
+            android:layout_below="@+id/box9"
+            android:text="Pesto" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/box10"
+            android:layout_centerHorizontal="true"
+            android:text="Canned Goods"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10pt" />
+
+        <CheckBox
+            android:id="@+id/box11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/submitButton"
+            android:layout_below="@+id/box10"
+            android:text="Trail mix (nuts, dried fruit)" />
+
+        <CheckBox
+            android:id="@+id/box12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/submitButton"
+            android:layout_below="@+id/box11"
+            android:text="Tuna" />
+
+        <CheckBox
+            android:id="@+id/box13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/submitButton"
+            android:layout_below="@+id/box12"
+            android:text="Dried Pasta" />
+
+                <Button
+                    android:id="@+id/submitButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="43dp"
+                    android:onClick="onClick"
+                    android:text="Donate!" />
+
+        </TableLayout>
+</ScrollView>
+
+
+<!--</RelativeLayout>-->
