@@ -1,51 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@+id/RelativeLayout01"
+<LinearLayout android:id="@+id/RelativeLayout01"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/anothaone"
+    android:weightSum="1">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="TITLE"
+        android:text="Hi! What would would you like to do?"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="25pt"
-        android:layout_marginTop="25dp"/>
+        android:gravity="center"
+        android:textSize="15pt"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.2"/>
     
-    <TextView
-        android:id="@+id/placement"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"/>
+    <!--<TextView-->
+        <!--android:id="@+id/placement"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"/>-->
 
     <Button
         android:id="@+id/G"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/placement"
-        android:layout_marginBottom="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
         android:background="@color/Green"
-        android:onClick="onClickG"
-        android:text="G"
-        android:textColor="@color/white" />
+        android:text="Give to friends"
+        android:textColor="@color/white"
+        android:layout_weight="0.005"/>
 
     <Button
         android:id="@+id/R"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/placement"
-        android:layout_marginTop="40dp"
-        android:text="R"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Get from friends"
         android:background="@color/Blue"
         android:textColor="@color/white"
-        android:onClick="onClickR"/>
+        android:onClick="onClickR"
+        android:layout_weight="0.005"/>
 
-    <Button
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/TV"-->
+        <!--android:layout_centerInParent="true"/>-->
+
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onClickD"
-        android:text="TO BE DELETED" />
-</RelativeLayout>
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@mipmap/icon3"
+        android:layout_weight="0.79"/>
+
+</LinearLayout>

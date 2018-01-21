@@ -45,7 +45,7 @@
         android:layout_alignStart="@+id/passInput"
         android:layout_below="@+id/passInput"
         android:ems="10"
-        android:hint="Re-enter Password"
+        android:hint="Confirm Password"
         android:inputType="textWebPassword" />
 
     <Button
