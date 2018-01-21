@@ -19,6 +19,7 @@ public class VolunteerButton extends AppCompatActivity {
 
     String email, password1, password2;
 
+    EditText nameInput;
     EditText emailInput;
     EditText passInput;
     EditText pass2Input;
@@ -31,6 +32,7 @@ public class VolunteerButton extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_volunteer);
 
+        nameInput = (EditText) findViewById(R.id.nameInput);
         emailInput = (EditText) findViewById(R.id.emailInput);
         passInput = (EditText) findViewById(R.id.passInput);
         pass2Input = (EditText) findViewById(R.id.pass2Input);
