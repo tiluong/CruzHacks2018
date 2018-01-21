@@ -16,6 +16,8 @@ public class DonorTasks extends AppCompatActivity {
     }
 
     public void onClickFood(View w){
+        Intent food = new Intent(this, FoodButton.class); //goes to food page
+        startActivity(food);
         Toast.makeText(this,
                 "Donate Food Clicked!",
                 Toast.LENGTH_SHORT).show();

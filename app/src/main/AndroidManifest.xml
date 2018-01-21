@@ -36,6 +36,9 @@
             android:name=".VolunteerButton"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".FoodButton"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".Receive"
             android:screenOrientation="portrait" />
         <activity android:name=".DonorTasks" />
