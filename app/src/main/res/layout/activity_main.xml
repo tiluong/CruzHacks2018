@@ -27,22 +27,22 @@
 
     <Button
         android:id="@+id/G"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="20dp"
         android:background="@color/Green"
-        android:text="G"
+        android:text="Give to friends"
         android:textColor="@color/white"
         android:layout_weight="0.005"/>
 
     <Button
         android:id="@+id/R"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:text="R"
+        android:text="Get from friends"
         android:background="@color/Blue"
         android:textColor="@color/white"
         android:onClick="onClickR"

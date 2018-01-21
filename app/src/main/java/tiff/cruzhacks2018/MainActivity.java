@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     Double Latitude;
 
     Button getLocationBtn;
+    Button giveLocationBtn;
     LocationManager locationManager;
     TextView locationText;
 
@@ -37,7 +38,8 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         setContentView(R.layout.activity_main);
 
 
-        getLocationBtn = (Button)findViewById(R.id.G);
+        getLocationBtn = (Button)findViewById(R.id.R);
+        giveLocationBtn = (Button)findViewById(R.id.G);
 //        locationText = (TextView)findViewById(R.id.TV);
 
         if (ContextCompat.checkSelfPermission(getApplicationContext(),
@@ -66,7 +68,28 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 //                }
                 myIntent.putExtra("Long", Longitude);
                 myIntent.putExtra("Lat", Latitude);
+                myIntent.putExtra("type", "getting");
 
+//                Toast.makeText(MainActivity.this, "Long:"+Longitude+" Lat:"+Latitude, Toast.LENGTH_SHORT).show();
+                startActivity(myIntent);
+            }
+        });
+
+        giveLocationBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent myIntent = new Intent(MainActivity.this, MapsActivity2.class);
+//                System.out.println("asdfd");
+//                System.out.print("Long:"+Longitude+" Lat:"+Latitude);
+//                try {
+//                    TimeUnit.SECONDS.sleep(5);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+                myIntent.putExtra("Long", Longitude);
+                myIntent.putExtra("Lat", Latitude);
+                myIntent.putExtra("type", "giving");
 //                Toast.makeText(MainActivity.this, "Long:"+Longitude+" Lat:"+Latitude, Toast.LENGTH_SHORT).show();
                 startActivity(myIntent);
             }
