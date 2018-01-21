@@ -48,13 +48,6 @@
         android:onClick="onClickR"
         android:layout_weight="0.005"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onClickD"
-        android:text="TO BE DELETED"
-        android:layout_weight="0.1"/>
-
     <!--<TextView-->
         <!--android:layout_width="wrap_content"-->
         <!--android:layout_height="wrap_content"-->
@@ -67,6 +60,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         app:srcCompat="@mipmap/icon3"
-        android:layout_weight="0.69"/>
+        android:layout_weight="0.79"/>
 
 </LinearLayout>

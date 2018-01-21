@@ -118,11 +118,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         startActivity(myIntent);
     }
 
-    public void onClickD(View v){
-        Intent myIntent = new Intent(this, DonorTasks.class);
-        startActivity(myIntent);
-    }
-
     @Override
     public void onLocationChanged(Location location) {
         Longitude = location.getLongitude();
