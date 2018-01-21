@@ -38,16 +38,17 @@ public class DonorTasks extends AppCompatActivity {
 
     public void onClickFood(View w){
         Intent food = new Intent(this, FoodButton.class); //goes to food page
+        food.putExtra("name", name);
         startActivity(food);
-        Toast.makeText(this,
-                "Donate Food Clicked!",
-                Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this,
+//                "Donate Food Clicked!",
+//                Toast.LENGTH_SHORT).show();
     }
 
     public void onClickMoney(View w){
-        Toast.makeText(this,
-                "Donate Money Clicked!",
-                Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this,
+//                "Donate Money Clicked!",
+//                Toast.LENGTH_SHORT).show();
         Uri uri = Uri.parse("https://venmo.com/"); // missing 'http://' will cause crashed
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
@@ -55,10 +56,11 @@ public class DonorTasks extends AppCompatActivity {
 
     public void onClickV(View w){
         Intent i = new Intent(this, VolunteerButton.class);
+        i.putExtra("name", name);
         startActivity(i);
-        Toast.makeText(this,
-                "Volunteer to Work Clicked!",
-                Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this,
+//                "Volunteer to Work Clicked!",
+//                Toast.LENGTH_SHORT).show();
     }
 
     @Override

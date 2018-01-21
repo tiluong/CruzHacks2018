@@ -1,5 +1,6 @@
 package tiff.cruzhacks2018;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -30,6 +31,10 @@ public class VolunteerButton extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Intent i = getIntent();
+        String name = i.getStringExtra("name");
+        android.support.v7.app.ActionBar mActionBar = getSupportActionBar();
+        mActionBar.setTitle(name);
         setContentView(R.layout.activity_volunteer);
 
         nameInput = (EditText) findViewById(R.id.nameInput);
@@ -50,11 +55,26 @@ public class VolunteerButton extends AppCompatActivity {
                             "Passwords do not match!",
                             Toast.LENGTH_SHORT).show();
                 }
-                showToast(email);
-
+//                showToast(email);
+                sendEmail();
+//                Intent i = new Intent(VolunteerButton.this, Mail.class);
+//                startActivity(i);
             }
         });
 
+    }
+
+    private void sendEmail() {
+        //Getting content for email
+        String email1 = email;
+        String subject = "Thank you for Registering!";
+        String message = "Thanks for being a food Friend! This is your account pwd: "+password1;
+
+        //Creating SendMail object
+        SendMail sm = new SendMail(this, email, subject, message);
+
+        //Executing sendmail to send email
+        sm.execute();
     }
 
     private void showToast(String text) {

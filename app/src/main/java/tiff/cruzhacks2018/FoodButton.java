@@ -28,7 +28,12 @@ public class FoodButton extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Intent i = getIntent();
+        String name = i.getStringExtra("name");
+        android.support.v7.app.ActionBar mActionBar = getSupportActionBar();
+        mActionBar.setTitle(name);
         setContentView(R.layout.activity_food);
+
     }
 
     public void onClick(View w){
