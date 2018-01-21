@@ -1,5 +1,7 @@
 package tiff.cruzhacks2018;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,9 +25,14 @@ public class DonorTasks extends AppCompatActivity {
         Toast.makeText(this,
                 "Donate Money Clicked!",
                 Toast.LENGTH_SHORT).show();
+        Uri uri = Uri.parse("https://venmo.com/"); // missing 'http://' will cause crashed
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
     }
 
     public void onClickV(View w){
+        Intent i = new Intent(this, VolunteerButton.class);
+        startActivity(i);
         Toast.makeText(this,
                 "Volunteer to Work Clicked!",
                 Toast.LENGTH_SHORT).show();

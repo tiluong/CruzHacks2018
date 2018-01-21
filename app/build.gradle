@@ -4,6 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion '26.0.2'
     defaultConfig {
+        multiDexEnabled true
         applicationId "tiff.cruzhacks2018"
         minSdkVersion 15
         targetSdkVersion 25
