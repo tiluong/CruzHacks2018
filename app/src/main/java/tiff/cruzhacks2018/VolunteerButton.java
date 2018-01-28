@@ -68,7 +68,7 @@ public class VolunteerButton extends AppCompatActivity {
         //Getting content for email
         String email1 = email;
         String subject = "Thank you for Registering!";
-        String message = "Thanks for being a food Friend! This is your account pwd: "+password1;
+        String message = "Hi "+nameInput.getText().toString()+"!\nThanks for being a Food Friend! \nThis is your account password: "+password1+"\nBest,\nFood Friends";
 
         //Creating SendMail object
         SendMail sm = new SendMail(this, email, subject, message);
